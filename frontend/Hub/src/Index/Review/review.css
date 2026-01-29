@@ -1,0 +1,64 @@
+.test {
+    padding-top: 40px;
+    text-align: center;
+    color: #380a0a ;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 20px;
+    color: green;
+
+}
+
+.customersay {
+    width: 100%;
+    border: 2px solid #333;
+    border-radius: 0px 20px;
+    padding: 20px;
+    margin: 20px 0;
+    background: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.customersay p {
+    color: #000;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.customersay h5 {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+.avatar{
+  width: 50px;
+  height: 50px;       
+  border-radius: 50%;
+  object-fit: cover;   
+  position: relative;
+  top: 20%;
+  border: 3px solid #ffffff;   
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+.stars {
+    color: gold;
+    margin-top: 5px;
+    text-align: right;
+}
+.review{
+    display: flex;
+    gap: 5%;
+    padding: 5%;
+}
+
+/* Hover effect */
+.customersay:hover {
+    transform: translateY(-6px);
+    /* background-color: #a3aa45; */
+
+}
+

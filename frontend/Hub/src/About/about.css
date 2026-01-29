@@ -1,0 +1,152 @@
+.wrap {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 23.5px 0;
+}
+/* Hero */
+.hero {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-top: 50px;
+}
+.hero-media {
+  flex: 1 1 48%;
+}
+.hero-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+.hero-content {
+  flex: 1 1 48%;
+}
+.hero-content h1 {
+  font-size: 30px;
+  color: #7a1818;
+  margin-bottom: 12px;
+}
+.lead {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+a{
+    color: #000000;
+
+}
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  background: var #b2b435;
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+/* Gallery images */
+.images img {
+  transform: scale(1.05); /* zoom slightly */
+  transition: transform 0.4s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.images figure {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Story / Mission */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding: 24px 0;
+}
+.two-col h2 {
+  color: #7a1818;
+  margin-bottom: 8px;
+}
+
+/* Gallery */
+.gallery h2 {
+  text-align: center;
+  color: #7a1818;
+  margin-bottom: 16px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.images figure {
+  text-align: center;
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+}
+.images img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.images figcaption {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* Values + quick contact */
+.values-contact {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  left: 9%;
+  padding: 24px 0 60px;
+}
+.values {
+  flex: 1;
+}
+.quick-contact {
+  position: relative;
+  right: 15%;
+  flex: 0 0 320px;
+  background: #fafafa;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
+}
+.btn-outline {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #7a1818;
+  color: #7a1818;
+  font-weight: 600;
+}
