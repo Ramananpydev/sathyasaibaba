@@ -92,8 +92,12 @@ WSGI_APPLICATION = "project.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "shop",
+        "USER":"root",
+        "PASSWORD":"ram1312",
+        "HOST":"localhost",
+        "PORT":"3306",
     }
 }
 
@@ -146,3 +150,5 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
