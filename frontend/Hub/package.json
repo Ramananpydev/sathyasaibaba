@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":  "https://ramananpydev.github.io/sweet-savory",
+  "homepage": "https://ramananpydev.github.io/ecommerce-react--django_restapi",
 
   "scripts": {
     "dev": "vite",
