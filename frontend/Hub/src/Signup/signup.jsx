@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./signup.css";
-
+import google from "../assets/google.png";
+import fb from "../assets/Facebook2.png";
+import insta from "../assets/instagram1.png";
 
 
 function Signup({ onClose,goToSignin }) {
@@ -70,9 +72,15 @@ function Signup({ onClose,goToSignin }) {
 
         <button className="signin-btn">Sign Up</button>
         <section className="another">
-        <a href="https://www.facebook.com/login/" target="_blank"><img src="Facebook2.png" alt="Facebook"/></a>
-        <a href="https://accounts.google.com/signin" target="_blank"><img src="google.png" alt="google"/></a>
-        <a href="https://www.instagram.com/accounts/login/" target="_blank" ><img src="Instagram.png" alt="Instagram"/></a>
+              <a href="https://www.facebook.com/login/" target="_blank">
+                <img src={fb} alt="Facebook" />
+              </a>
+              <a href="https://accounts.google.com/signin" target="_blank">
+                <img src={google} alt="Google" />
+              </a>
+              <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                <img src={insta} alt="Instagram" />
+              </a>
       </section>
     </form>
       </div>
