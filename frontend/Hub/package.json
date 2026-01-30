@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ramananpydev.github.io",
+  "homepage":  "https://ramananpydev.github.io/sweet-savory",
 
   "scripts": {
     "dev": "vite",
