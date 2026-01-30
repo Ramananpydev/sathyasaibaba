@@ -34,7 +34,6 @@ const Testimonials=[{id:6,icon:'fas fa-quote-left quote' ,review:'I grew up eati
 function App() {
   return (
     <div>
-      <BrowserRouter>
       <Header/>
       <Routes>
      <Route
@@ -73,7 +72,7 @@ function App() {
           <Route path="/order-success" element={<Order />} />
           </Routes>
       <Footer/>
-      </BrowserRouter>
+
     </div>
   )
 }
