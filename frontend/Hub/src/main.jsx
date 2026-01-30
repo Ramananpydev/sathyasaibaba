@@ -9,7 +9,7 @@ import App from './App.jsx'
 const basename = import.meta.env.PROD ? "/sweet-savory" : "/";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/sweet-savory">
+    <BrowserRouter basename={basename}>
     <App />
     </BrowserRouter>
   </StrictMode>,
