@@ -1,5 +1,5 @@
 import React from 'react'
-import{ BrowserRouter,Route,Routes } from 'react-router-dom'
+import{Route,Routes } from 'react-router-dom'
 import './App.css'
 import Header from './Index/Header/header'
 import Section from './Index/section/section'
@@ -64,7 +64,7 @@ function App() {
               </div>
             </>
           }/> 
-          <Route path="/" element={<Home />} />
+
           <Route path='/Product' element={<Product/>}/>
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/About' element={<About/>}/>
