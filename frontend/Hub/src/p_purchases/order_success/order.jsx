@@ -4,7 +4,7 @@ import './order.css'
 
 function Order() {
   return (
-    <div className="body">
+    <div className="order-success-page">
       <section className="success-container">
         <div className="success-card">
           <i className="fa-solid fa-circle-check success-icon"></i>
@@ -13,12 +13,8 @@ function Order() {
             Thank you for shopping with <span>Sweet & Savory</span> 🍪
           </p>
           <div className="buttons">
-            <Link to="/" className="btn home" >
-              🏠 Back to Home
-            </Link>
-            <Link to="/Product" className="btn shop">
-              🛒 Continue Shopping
-            </Link>
+            <Link to="/" className="btn home">🏠 Back to Home</Link>
+            <Link to="/Product" className="btn shop">🛒 Continue Shopping</Link>
           </div>
         </div>
       </section>

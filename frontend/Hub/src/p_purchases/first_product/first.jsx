@@ -191,7 +191,7 @@ function First() {
                     type="radio"
                     name="payment"
                     value="cod"
-                    checked={formData.payment_method === "cod"}
+                    checked={formData.payment === "cod"}
                     onChange={handleChange}
                   />{" "}
                   Cash on Delivery
@@ -201,7 +201,7 @@ function First() {
                     type="radio"
                     name="payment"
                     value="card"
-                    checked={formData.payment_method === "card"}
+                    checked={formData.payment === "card"}
                     onChange={handleChange}
                   />{" "}
                   Credit / Debit Card
@@ -211,7 +211,7 @@ function First() {
                     type="radio"
                     name="payment"
                     value="gpay"
-                    checked={formData.payment_method === "gpay"}
+                    checked={formData.payment === "gpay"}
                     onChange={handleChange}
                   />{" "}
                   Google Pay
@@ -221,7 +221,7 @@ function First() {
                     type="radio"
                     name="payment"
                     value="phonepe"
-                    checked={formData.payment_method === "phonepe"}
+                    checked={formData.payment === "phonepe"}
                     onChange={handleChange}
                   />{" "}
                   PhonePe
