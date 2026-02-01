@@ -7,7 +7,7 @@ import "./first.css";
 const products = [
   {
     id: 9,
-    product: "/adhi.JPG",
+    product: `${import.meta.env.BASE_URL}adhi.JPG`,
     head_name: "Adhirasam",
     p_name: "Rice flour and jaggery.",
     price: "30",
@@ -15,7 +15,7 @@ const products = [
   },
   {
     id: 10,
-    product: "/adhi2.webp",
+    product: `${import.meta.env.BASE_URL}adhi2.webp`,
     head_name: "Sesame Adhirasam",
     p_name: "Special sesame flavor.",
     price: "40",
@@ -23,7 +23,7 @@ const products = [
   },
   {
     id: 11,
-    product: "/kaimu.jpg",
+    product: `${import.meta.env.BASE_URL}kaimu.jpg`,
     head_name: "Mullu Murukku",
     p_name: "Crispy ridged murukku.",
     price: "20",
@@ -31,7 +31,7 @@ const products = [
   },
   {
     id: 12,
-    product: "/hand.webp",
+    product: `${import.meta.env.BASE_URL}hand.webp`,
     head_name: "Hand-woven Murukku",
     p_name: "Hand twisted snack.",
     price: "20",
@@ -39,7 +39,7 @@ const products = [
   },
   {
     id: 13,
-    product: "/butter.jpg",
+    product: `${import.meta.env.BASE_URL}buttermurukku.webp`,
     head_name: "Butter Murukku",
     p_name: "Rich buttery taste.",
     price: "70",
