@@ -24,7 +24,7 @@ function Section() {
     <h2 className = " btn btn-first">Explore Our Blends</h2>
     </div>
     <div class = "company-logo">
-    <img src   = "logo.png" alt = "oops!" />
+    <img src   = {`${import.meta.env.BASE_URL}logo.png`} alt = "oops!" />
     </div>
     </div>
     </div>

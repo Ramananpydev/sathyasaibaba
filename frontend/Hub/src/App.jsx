@@ -24,9 +24,9 @@ const service=[
               
 ]
 
-const Testimonials=[{id:6,icon:'fas fa-quote-left quote' ,review:'I grew up eating my grandmother’s athirasam, and tasting this instantly took me back to those days. Soft in the middle, perfectly crisp on the edges, and full of that authentic jaggery flavor — just like it’s meant to be. You can tell it’s made with care and tradition. It feels homemade, not factory-made, and that makes all the difference. ', image:'/preethi.jpg', name:'Preethi',},
-                    {id:7,icon:'fas fa-quote-left quote' ,review:'When it comes to traditional snacks, these are my top picks — athirasam and murukku. The athirasam is soft in the middle with that rich jaggery sweetness, while the murukku is perfectly crunchy and light, without feeling oily. I shared both with my family and everyone loved them. Truly authentic taste you can trust every time.', image:'/saam.jpg', name:'Saam', },
-                    {id:8,icon:'fas fa-quote-left quote' ,review:'The seasonal athirasam with cardamom and ginger is something special. The gentle spice from ginger blends beautifully with the sweet jaggery, and the cardamom gives a refreshing aroma in every bite. It’s not just a sweet — it feels festive, warm, and unique. A perfect treat for the season that stands out from the usual.', image:'/suriya.webp',name:'Suriya',}
+const Testimonials=[{id:6,icon:'fas fa-quote-left quote' ,review:'I grew up eating my grandmother’s athirasam, and tasting this instantly took me back to those days. Soft in the middle, perfectly crisp on the edges, and full of that authentic jaggery flavor — just like it’s meant to be. You can tell it’s made with care and tradition. It feels homemade, not factory-made, and that makes all the difference. ', image:`${import.meta.env.BASE_URL}preethi.jpg`, name:'Preethi',},
+                    {id:7,icon:'fas fa-quote-left quote' ,review:'When it comes to traditional snacks, these are my top picks — athirasam and murukku. The athirasam is soft in the middle with that rich jaggery sweetness, while the murukku is perfectly crunchy and light, without feeling oily. I shared both with my family and everyone loved them. Truly authentic taste you can trust every time.', image:`${import.meta.env.BASE_URL}saam.jpg`, name:'Saam', },
+                    {id:8,icon:'fas fa-quote-left quote' ,review:'The seasonal athirasam with cardamom and ginger is something special. The gentle spice from ginger blends beautifully with the sweet jaggery, and the cardamom gives a refreshing aroma in every bite. It’s not just a sweet — it feels festive, warm, and unique. A perfect treat for the season that stands out from the usual.', image:`${import.meta.env.BASE_URL}suriya.webp`,name:'Suriya',}
 
 ]
 
@@ -36,9 +36,7 @@ function App() {
     <div>
       <Header/>
       <Routes>
-     <Route
-          path="/"
-          element={
+     <Route path="/" element={
             <>
               <Section />
 

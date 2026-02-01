@@ -81,7 +81,7 @@ function About() {
             33A Manickavasagar Street<br />Aarumuganagar, Kalugumalai-628552
           </p>
           <p>Phone: +58585 92922<br />Email: sathyashop@gmail.com</p>
-          <a class="btn-outline" href="contact.html">Contact Us</a>
+          <Link to="/Contact" className="btn-outline" >Contact Us</Link>
         </aside>
       </section>
 

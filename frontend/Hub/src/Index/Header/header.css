@@ -98,6 +98,7 @@ nav ul :focus::after {
 
 .btn-first {
   background-color: #b2b435;
+    margin-bottom: 10px;
 }
 
 .btn-second {
@@ -117,4 +118,108 @@ nav ul :focus::after {
 
 .btn-second:hover {
   transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-wrap: wrap;         
+    padding: 10px;
+  }
+
+  .logo-text {
+    font-size: 24px;          
+  }
+
+  nav ul {
+    gap: 15px;               
+  }
+
+  nav ul li a {
+    font-size: 14px;          
+  }
+
+  .nav {
+    gap: 8px;
+  }
+ 
+  .nav .btn-first {
+    padding: 10px 10px;
+    font-size: 12px ;
+    line-height: 1.2;
+  }
+
+  .nav .btn-first i {
+    font-size: 12px ;
+    margin-right: 3px;
+  }
+
+  .btn-second1 {
+    font-size: 14px;          
+    margin-right: 10px;
+  }
+
+
+}
+
+/* tablet  */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .container {
+    padding: 14px 18px;
+  }
+
+  .logo-text {
+    font-size: 28px;
+  }
+
+  nav ul {
+    gap: 22px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .nav .btn-first {
+    padding: 6px 14px;
+    font-size: 14px;
+   
+  }
+
+  .btn-second1 {
+    font-size: 15px;
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1280px) {
+
+  .container {
+    padding: 20px 40px;
+  }
+
+  .logo-text {
+    font-size: 36px;
+  }
+
+  nav ul {
+    gap: 40px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  .nav .btn-first {
+    padding: 10px 22px;
+    font-size: 16px;
+  }
+
+  .btn-second1 {
+    font-size: 18px;
+  }
 }

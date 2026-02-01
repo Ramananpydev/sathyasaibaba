@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import './product.css'
 
 
-const product=[{id:9,ima:'/adhi.JPG',pname:'Traditional South Indian sweet',details:'Its a deep-fried, crispy disc-shaped treat with cardamom flavor.Popular festive sweet. quantity : 10 pieces',price:'₹30.00',},
-                {id:10,ima:'/adhi2.webp',pname:'Cultural significance Special Sesame',details:'Adhirasam is a festive sweet during Diwali, symbol of good luck & prosperity.quantity : 10 pieces',price:'₹40.00',},
-                {id:11,ima:'/kaimu.jpg',pname:'Mullu Murukku',details:'Made from rice dough, deep fried. Manapparai is famous for this snack. quantity : 12 pieces',price:'₹20.00',},
-                {id:12,ima:'/hand.webp',pname:'Hand-woven Murukku',details:'Famous Marapparai Kai Murukku is hand-made with stiffer dough.quantity : 12 pieces',price:'₹20.00',},
-                {id:13,ima:'/buttermurukku.webp',pname:'Special Butter Murukku',details:'Crispy, twisted shape, savory buttery flavor. South Indian special. quantity : 100 grams',price:'₹70.00',},
+const product=[{id:9,ima:`${import.meta.env.BASE_URL}adhi.JPG`,pname:'Traditional South Indian sweet',details:'Its a deep-fried, crispy disc-shaped treat with cardamom flavor.Popular festive sweet. quantity : 10 pieces',price:'₹30.00',},
+                {id:10,ima:`${import.meta.env.BASE_URL}adhi2.webp`,pname:'Cultural significance Special Sesame',details:'Adhirasam is a festive sweet during Diwali, symbol of good luck & prosperity.quantity : 10 pieces',price:'₹40.00',},
+                {id:11,ima:`${import.meta.env.BASE_URL}kaimu.jpg`,pname:'Mullu Murukku',details:'Made from rice dough, deep fried. Manapparai is famous for this snack. quantity : 12 pieces',price:'₹20.00',},
+                {id:12,ima:`${import.meta.env.BASE_URL}hand.webp`,pname:'Hand-woven Murukku',details:'Famous Marapparai Kai Murukku is hand-made with stiffer dough.quantity : 12 pieces',price:'₹20.00',},
+                {id:13,ima:`${import.meta.env.BASE_URL}buttermurukku.webp`,pname:'Special Butter Murukku',details:'Crispy, twisted shape, savory buttery flavor. South Indian special. quantity : 100 grams',price:'₹70.00',},
 
 ]
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams  } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 import "./first.css";
@@ -67,7 +67,7 @@ function First() {
     address: "",
     payment: "",
   });
-console.log(formData.payment);
+  console.log(formData.payment);
 
   const handleChange = (e) => {
     setFormData({
@@ -95,7 +95,7 @@ console.log(formData.payment);
     });
 
     if (response.ok) {
-        navigate("/order-success");
+      navigate("/order-success");
     } else {
       alert("Order failed ❌");
     }
@@ -187,18 +187,44 @@ console.log(formData.payment);
               <h3>Payment Method</h3>
               <div className="payment-options">
                 <label>
-                  <input type="radio" name="payment" value="cod" checked={formData.payment_method === "cod"} onChange={handleChange}/> Cash on
-                  Delivery
+                  <input
+                    type="radio"
+                    name="payment"
+                    value="cod"
+                    checked={formData.payment_method === "cod"}
+                    onChange={handleChange}
+                  />{" "}
+                  Cash on Delivery
                 </label>
                 <label>
-                  <input type="radio" name="payment" value="card" checked={formData.payment_method === "card"} onChange={handleChange}/> Credit /
-                  Debit Card
+                  <input
+                    type="radio"
+                    name="payment"
+                    value="card"
+                    checked={formData.payment_method === "card"}
+                    onChange={handleChange}
+                  />{" "}
+                  Credit / Debit Card
                 </label>
                 <label>
-                  <input type="radio" name="payment" value="gpay" checked={formData.payment_method === "gpay"} onChange={handleChange} /> Google Pay
+                  <input
+                    type="radio"
+                    name="payment"
+                    value="gpay"
+                    checked={formData.payment_method === "gpay"}
+                    onChange={handleChange}
+                  />{" "}
+                  Google Pay
                 </label>
                 <label>
-                  <input type="radio" name="payment" value="phonepe" checked={formData.payment_method === "phonepe"} onChange={handleChange} /> PhonePe
+                  <input
+                    type="radio"
+                    name="payment"
+                    value="phonepe"
+                    checked={formData.payment_method === "phonepe"}
+                    onChange={handleChange}
+                  />{" "}
+                  PhonePe
                 </label>
               </div>
 

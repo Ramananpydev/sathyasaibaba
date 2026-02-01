@@ -82,80 +82,74 @@ function Contact() {
         </div>
       </section>
       <div className="customer">
-        <a href="tel:+91987857575">
+        <a href="tel:+919384415892">
           <img src="customer_support.jpg" alt="" />
         </a>
       </div>
 
-      <section className="form-section wrap">
+      <section className="form-section">
         <h2>Send a Message</h2>
 
-        <form onSubmit={handleSubmit} className="contact-form">
-          <div className="form-group">
-            <label htmlFor="name">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
+        <div className="contact-wrapper">
+          <div className="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.123456!2d77.7006944!3d9.1544444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKalugumalai!5e0!3m2!1sen!2sin!4v1700000000000"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Map"
+            ></iframe>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="phone">Phone number</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
-          </div>
+          <form onSubmit={handleSubmit} className="contact-form">
+            <div className="form-group">
+              <label>Your Name</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
+            <div className="form-group">
+              <label>Phone number</label>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </div>
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <button type="submit" className="btns">
-            Send Message
-          </button>
-        </form>
+            <div className="form-group">
+              <label>Message</label>
+              <textarea
+                name="message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-        <figure>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1648.9434844850439!2d77.7006944!3d9.1544444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDknMTYuMCJOIDc3wrA0MicwMi41IkU!5e1!3m2!1sen!2sin!4v1759730683626!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Map"
-          ></iframe>
-        </figure>
+            <button type="submit" className="btns">
+              Send Message
+            </button>
+          </form>
+        </div>
       </section>
     </div>
   );
